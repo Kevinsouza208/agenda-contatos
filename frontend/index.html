@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contatos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+<header>
+    <h1>Agenda de Contatos</h1>
+<p>Organize seus contatos de forma simples.</p>
+
+</header>
+
+<main>
+
+    <section>
+        <h2>Comunicação com o servidor</h2>
+        <p id="mensagem">Aguardando resposta...</p>
+    </section>
+    
+    <section class="formulario">
+        <h2>
+            Novo Contato
+        </h2>
+
+        <form>
+            <label for="nome">
+                Nome
+            </label>
+            <input
+            type="text"
+            id="nome"
+            name="nome"
+            >
+
+            <label for ="telefone">
+                Telefone
+            </label>
+
+            <input
+            type="tel"
+            id="telefone"
+            name="telefone"
+            >
+
+            <label for="email">
+                E-mail
+            </label>
+
+            <input
+            type="email"
+            id="email"
+            name="email"
+            >
+
+            <button type="submit">
+                Adicionar contato
+            </button>
+
+        </form>
+
+    </section>
+
+    <section class="lista">
+      
+        <h2>
+            Meus Contatos
+        </h2>
+
+        <div id="lista-contatos">
+
+        </div>
+    </section>
+
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>
